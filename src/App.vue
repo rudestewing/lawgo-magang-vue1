@@ -7,6 +7,17 @@
         <div>
             Let's play around ...
         </div>
+
+        <div>
+            <h3>
+                animal
+            </h3>
+            <ul>
+                <li v-for="(animal, index) in animals " :key="index">
+                    {{animal.type}} - {{animal.name}} ({{animal.age}})
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -14,7 +25,18 @@
 export default {
     data() {
         return {
-
+            animals: [
+                {
+                    type: 'cat',
+                    name: 'tom',
+                    age: 4,
+                },
+                {
+                    type: 'dog',
+                    name: 'bark',
+                    age: 5,
+                }
+            ]
         }
     }
 
