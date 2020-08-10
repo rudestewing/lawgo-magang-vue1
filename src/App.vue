@@ -5,7 +5,7 @@
         </div>
 
         <div>
-            Let's play around ...
+            Let's play with mention animal do you like
         </div>
 
         <div>
